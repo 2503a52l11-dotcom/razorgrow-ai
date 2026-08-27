@@ -128,3 +128,77 @@ razorgrow-ai/
 │
 ├── .gitignore
 └── README.md
+
+
+🚀 Running the Project
+Backend
+
+Navigate to the backend:
+
+cd backend
+
+Create and activate a virtual environment:
+
+python -m venv .venv
+
+Windows:
+
+.venv\Scripts\Activate.ps1
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+Start FastAPI:
+
+uvicorn app.main:app --reload --port 8000
+
+Backend API:
+
+http://127.0.0.1:8000
+
+Swagger documentation:
+
+http://127.0.0.1:8000/docs
+Frontend
+
+Open another terminal:
+
+cd frontend
+
+Install dependencies:
+
+npm.cmd install
+
+Start the development server:
+
+npm.cmd run dev
+
+Frontend:
+
+http://localhost:5173
+🤖 Running Local AI
+
+Install Ollama and make sure the Qwen3 model is available:
+
+ollama run qwen3:4b
+
+The FastAPI backend communicates with the local Ollama service to generate business recommendations.
+
+🔐 Environment Variables
+
+Sensitive configuration should be stored in .env.
+
+The .env file is intentionally excluded from Git using .gitignore.
+
+Do not upload passwords, database credentials, API keys, or other secrets to GitHub.
+
+📊 Example Analytics
+
+The analytics API provides information such as:
+
+Total Orders
+Total Revenue
+Units Sold
+Average Order Value
+Daily Revenue
