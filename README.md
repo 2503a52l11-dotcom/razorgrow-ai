@@ -1,7 +1,12 @@
-# RazorGrow AI
+RazorGrow AI — AI-Powered Business Intelligence Dashboard
 
-Turn conversations into conversions.
-
-Project scaffolding is beginning incrementally. The current milestone contains only the initial FastAPI backend health endpoint.
-
-See [backend/README.md](backend/README.md) for local setup.
+FastAPI backend
+React + Vite frontend
+PostgreSQL database
+Product/inventory management
+Order management
+Sales analytics
+Daily revenue chart
+Low-stock monitoring
+Local Qwen3 AI recommendations through Ollama
+Responsive dashboard
